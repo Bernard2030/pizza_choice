@@ -5,7 +5,7 @@ list-style-type: none; */
 
 
 
-/* .elements{
+.elements{
     justify-content: space-between;
     
 
@@ -14,7 +14,7 @@ list-style-type: none; */
 
 
 
-.home{
+/* .home{
     background-image: url("../img/beefpizza.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,8 +22,8 @@ list-style-type: none; */
     height: 500px;
     padding-top: 200px;
     color: orangered;
-}
-.choosePizza{
+} */
+/* .choosePizza{
    
     width: 250px;
     height: 200px;
@@ -47,9 +47,9 @@ list-style-type: none; */
    
     width: 250px;
     height: 200px;
-}
+} */
 
-.peperoni{
+/* .peperoni{
     height: 165px;
 }
 .chicken{
@@ -64,4 +64,4 @@ list-style-type: none; */
 #quantity{
     margin-bottom: 50px;
     color: olive;
-} */ 
+} */  
