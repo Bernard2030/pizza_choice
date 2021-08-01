@@ -1,0 +1,67 @@
+/* /* .nav-elements{
+display: flex;
+padding: 0px 0px;
+list-style-type: none; */
+
+
+
+/* .elements{
+    justify-content: space-between;
+    
+
+}
+
+
+
+
+.home{
+    background-image: url("../img/beefpizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    padding-top: 200px;
+    color: orangered;
+}
+.choosePizza{
+   
+    width: 250px;
+    height: 200px;
+
+}
+
+.chooseTopping{
+   
+    width: 250px;
+    height: 200px;
+
+}
+
+.chooseCrust{
+   
+    width: 250px;
+    height: 200px;
+
+}
+.chooseSize{
+   
+    width: 250px;
+    height: 200px;
+}
+
+.peperoni{
+    height: 165px;
+}
+.chicken{
+    height: 165px;
+}
+.order{
+    background-color: chocolate;
+    margin-top: 50px;
+    border-radius: 50px;
+    color: olive;
+}
+#quantity{
+    margin-bottom: 50px;
+    color: olive;
+} */ 
