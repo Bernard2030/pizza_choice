@@ -68,3 +68,27 @@
 //        prompt("enter location");
 //    }
 // })
+
+// // check price
+
+// let price, totalPrice;
+// switch (flavor){
+//     case flavor = "chickenPizza":
+//         switch(size) {
+//             case size = "small":
+//                 price = 500;
+//                 if (topping === "topping1"){
+//                     totalPrice = (price * number) ;
+//                 } else if (topping === "topping2"){
+//                     totalPrice = (price * number);
+//                 } else if (topping === "topping3"){
+//                     totalPrice = (price * number);
+//                 } else if (topping === "topping4") {
+//                     totalPrice = (price * number);
+//                 }
+//                 break;
+//                 case size = "medium":
+//                     price = 800;
+
+//         }
+// }
