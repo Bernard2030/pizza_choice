@@ -23,7 +23,7 @@ Pizza point is a website that allows you to choose and order pizza, then tells y
 * jQuery
 * Bootstrap
 ## Setup/Installation Requirements
-* Live link to view the project; Delani studio https://bernard2030.github.io/delani-studio/
+* Live link to view the project; pizza point https://bernard2030.github.io/pizza_point/
 
 ## Known Bugs
 So far there are no known bags if you find any let me know through my contact details.
