@@ -89,14 +89,15 @@ $(document).ready(function () {
 
     // confirming delivery
     if (confirm('Make delivery')) {
-      prompt(" Please enter your location");
-      prompt(" Please enter your phone number");
-      alert("Your pizza is enrout coming");
+      let location = prompt(" Please enter your location");
+      let phoneNumber = prompt(" Please enter your phone number");
+      alert("Your pizza is enrout coming to " + location + " our agent will call you on " + phoneNumber + " upon arrival.");
       alert("Here is your order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + toppingName + ", " + crustName + " Your delivery fee is Ksh: 150.");
       alert("Your charges for Pizza" + (totalCost + 200));
     } else {
       alert("Order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + toppingName + ", " + crustName);
-      alert("Your charges for Pizza" + totalCost);
+      alert("Your charges for Pizza" + totalCost  );
+      alert("Thank you for Ordering from PiZZA poINT")
     }
     document.getElementById("start").reset();
   });
