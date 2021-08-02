@@ -1,94 +1,103 @@
-// $(document).ready(function(){
-//     $("#newForm").submit(function(event){
+// overlay of pizza
+$(document).ready(function(){
+    $(".port1").hover(() => {
+        $(".add1").show({ opacity: 5 }, 5);
+    },
+        () => {
+            $(".add1").hide({ opacity: 1 }, 5);
+        }
+    )
 
-//         event.preventDefault();
-//         function flavor(){
-//             let pizzaFlavour =document.getElementById("flavor").value;
-//             return parseInt(pizzaFlavour);
-//         }
-//     })
-//     $("#form1").submit(function(event){
+    $(".port2").hover(() => {
+        $(".add2").show({ opacity: 1 }, 5);
+    },
+        () => {
+            $(".add2").hide({ opacity: 1 }, 5);
+        }
+    )
 
-//         event.preventDefault();
-//         function topping() {
-//             let pizzaTopping = document.getElementById("topping").value;
-//             return parseInt(pizzaTopping)
-//         }
-//     })
-//     $("#form2").submit(function(event){
+    $(".port3").hover(() => {
+        $(".add3").show({ opacity: 1 }, 5);
+    },
+        () => {
+            $(".add3").hide({ opacity: 1 }, 5);
+        }
+    )
 
-//         event.preventDefault();
-//         function crust(){
-//             let pizzaCrust = document.getElementById("crust").value;
-//             return parseInt(pizzaCrust);
-//         }
-//     });
-//     $("#form3").submit(function(event){
+    $(".port4").hover(() => {
+        $(".add4").show({ opacity: 1 }, 5);
+    },
+        () => {
+            $(".add4").hide({ opacity: 1 }, 5);
+        }
+    )
 
-//         event.preventDefault();
-//         function size(){
-//             let pizzaSize = document.getElementById("size").value;
-//             return parseInt(pizzaSize);
-//         }
-//     });
-//     function Number(){
-//         let pizzaNumber = document.getElementById("quantity").value;
-//         return parseInt(pizzaNumber);
-//     }
-
-
-//     let flavorName = $("#flavor option: selected").text();
+})
     
-//     let toppingName = $("#topping option: selected").text();
-
-//     let crustName = $("#crust option: selected").text();
-    
-//     let sizeName = $("#size option: selected").text();
-//     let number = $("#quantity").val();
-
-//     // place order
-
-//    function Order(flavor, topping, crust,size, quantity){
-//        this.newFlavor = flavor;
-//        this.newTopping = topping;
-//        this.newCrust = crust;
-//        this.newSize = size;
-//        this.newQuantity = quantity;
-//    }
-
-//    let userInput = new Order(flavor(), topping(), crust(), size(), quantity());
-//    let totalCost =
-//    userInput.newSize +
-//    userInput.newCrust +
-//    userInput.newTopping +
-//    userInput.newFlavor *
-//    userInput.newQuantity;
-
-//    if(confirm('would you like delivery?')){
-//        prompt("enter location");
-//    }
-// })
-
-// // check price
-
-// let price, totalPrice;
-// switch (flavor){
-//     case flavor = "chickenPizza":
-//         switch(size) {
-//             case size = "small":
-//                 price = 500;
-//                 if (topping === "topping1"){
-//                     totalPrice = (price * number) ;
-//                 } else if (topping === "topping2"){
-//                     totalPrice = (price * number);
-//                 } else if (topping === "topping3"){
-//                     totalPrice = (price * number);
-//                 } else if (topping === "topping4") {
-//                     totalPrice = (price * number);
-//                 }
-//                 break;
-//                 case size = "medium":
-//                     price = 800;
-
-//         }
-// }
+// getting the form
+$(document).ready(function () {
+    $(".start").submit(function (event) {
+  
+      event.preventDefault();
+  
+      function flavor() {
+        let pizzaFlavour = document.getElementById("flavor").value;
+        return parseInt(pizzaFlavour);
+      }
+      function size() {
+        var pizzaSize = document.getElementById("size").value;
+        return parseInt(pizzaSize);
+      }
+      function crust() {
+        var pizzaCrust = document.getElementById("crust").value;
+        return parseInt(pizzaCrust);
+      }
+      function topping() {
+        var pizzaTopping = document.getElementById("topping").value;
+        return parseInt(pizzaTopping);
+      }
+      function number() {
+        var pizzaNumber = document.getElementById("quantity").value;
+        return parseInt(pizzaNumber);
+      }
+  
+    //   calling the inputs
+  let flavorName = $("#flavor option:selected").val()
+  
+  let sizeName = $("#size option:selected").val()
+  
+  let crustName = $("#crust option:selected").val()
+  
+  let toppingName = $("#topping option:selected").val()
+  
+  function Start(flavor, size, crust, topping, quantity) {
+    this.newFlavor = flavor;
+    this.newSize = size;
+    this.newCrust = crust;
+    this.newTopping = topping;
+    this.newQuantity = quantity;
+  }
+  
+  let userInput = new Start(flavor(), size(), crust(), topping(), number());
+  
+  let totalCost =
+    userInput.newSize +
+    userInput.newCrust +
+    userInput.newTopping +
+    userInput.newFlavor *
+    userInput.newQuantity;
+  
+    // confirming delivery
+  if (confirm('Make delivery')) {
+      prompt(" Please enter your location");
+      prompt(" Please enter your phone number");
+      alert("Your pizza is enrout coming");
+      alert("Here is your order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + toppingName + ", " + crustName + " Your delivery fee is Ksh: 150.");
+      alert("Your charges for Pizza" + (totalCost + 200));
+      } else {
+        alert("Order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + toppingName + ", " + crustName);
+        alert("Your charges for Pizza" + totalCost);
+      }
+      document.getElementById("start").reset();
+    });
+  });
